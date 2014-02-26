@@ -25,7 +25,7 @@ using namespace std;
 int main(int, char const**)
 {
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Steel Drum Game");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Steel Drum Game");
     window.setPosition(sf::Vector2i(0, 0));
 
     // Set the Icon
@@ -37,7 +37,7 @@ int main(int, char const**)
 
     // Load a sprite to display
     sf::Texture texture;
-    if (!texture.loadFromFile(resourcePath() + "cute_image.jpg")) {
+    if (!texture.loadFromFile(resourcePath() + "lead_diagram.jpg")) {
         return EXIT_FAILURE;
     }
     sf::Sprite sprite(texture);
@@ -47,14 +47,35 @@ int main(int, char const**)
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         return EXIT_FAILURE;
     }
+    
+    sf::SoundBuffer buffer;
+    if (!buffer.loadFromFile(resourcePath()+"C1.ogg"))
+        return -1;
+    sf::SoundBuffer buffer2;
+    if (!buffer2.loadFromFile(resourcePath()+"G2.ogg"))
+        return -1;
+    sf::SoundBuffer buffer3;
+    if (!buffer3.loadFromFile(resourcePath()+"D2.ogg"))
+        return -1;
+    
+    sf::Sound c1;
+    c1.setBuffer(buffer);
+    
+    sf::Sound g1;
+    g1.setBuffer(buffer2);
+    
+    sf::Sound d2;
+    d2.setBuffer(buffer3);
+    
     sf::Text text("Learn the Steel Drums!", font, 50);
-    text.setColor(sf::Color::Black);
+    text.setColor(sf::Color::Red);
 
     // Load a music to play
     sf::Music music;
     if (!music.openFromFile(resourcePath() + "Mr. Fete.ogg")) {
         return EXIT_FAILURE;
     }
+    
 
     // Play the music
     music.play();
@@ -75,7 +96,18 @@ int main(int, char const**)
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
                 window.close();
             }
-            
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::V){
+                c1.play();
+            }
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::B){
+                c1.play();
+            }
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::N){
+                g1.play();
+            }
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::M){
+                d2.play();
+            }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
                 music.pause();
             }

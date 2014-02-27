@@ -38,7 +38,7 @@ int main(int, char const**)
 
 {
 	
-	string a = "";
+	string a = resourcePath();
 	// Create the main window
 	sf::RenderWindow window(sf::VideoMode(800, 800), "Steel Drum Game");
 	window.setPosition(sf::Vector2i(0, 0));

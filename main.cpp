@@ -15,184 +15,98 @@
 #include <iostream>
 using namespace std;
 
-void setTenorSounds(sf::Sound(&allSounds)[29]) {
-    string soundsLoc = "./resources/sounds/";
+void setTenorSounds(sf::Sound(allSounds)[29], sf::SoundBuffer(allBuffers)[29]) {
+   string soundsLoc = "./resources/sounds/";
 
     //Sounds
-    sf::SoundBuffer buffer1;
-    if (!buffer1.loadFromFile(soundsLoc + "C1.ogg"))
+    if (!allBuffers[0].loadFromFile(soundsLoc + "C1.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer2;
-    if (!buffer2.loadFromFile(soundsLoc+ "G2.ogg"))
+    if (!allBuffers[1].loadFromFile(soundsLoc+ "G2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer3;
-    if (!buffer3.loadFromFile(soundsLoc+ "D2.ogg"))
+    if (!allBuffers[2].loadFromFile(soundsLoc+ "D2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer4;
-    if (!buffer4.loadFromFile(soundsLoc+ "A1.ogg"))
+    if (!allBuffers[3].loadFromFile(soundsLoc+ "A1.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer5;
-    if (!buffer5.loadFromFile(soundsLoc+ "E2.ogg"))
+    if (!allBuffers[4].loadFromFile(soundsLoc+ "E2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer6;
-    if (!buffer6.loadFromFile(soundsLoc+ "B1.ogg"))
+    if (!allBuffers[5].loadFromFile(soundsLoc+ "B1.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer7;
-    if (!buffer7.loadFromFile(soundsLoc+ "F#2.ogg"))
+    if (!allBuffers[6].loadFromFile(soundsLoc+ "F#2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer8;
-    if (!buffer8.loadFromFile(soundsLoc+ "C#2.ogg"))
+    if (!allBuffers[7].loadFromFile(soundsLoc+ "C#2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer9;
-    if (!buffer9.loadFromFile(soundsLoc+ "G#2.ogg"))
+    if (!allBuffers[8].loadFromFile(soundsLoc+ "G#2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer10;
-    if (!buffer10.loadFromFile(soundsLoc+ "Eb2.ogg"))
+    if (!allBuffers[9].loadFromFile(soundsLoc+ "Eb2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer11;
-    if (!buffer11.loadFromFile(soundsLoc+ "Bb1.ogg"))
+    if (!allBuffers[10].loadFromFile(soundsLoc+ "Bb1.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer12;
-    if (!buffer12.loadFromFile(soundsLoc+ "F2.ogg"))
+    if (!allBuffers[11].loadFromFile(soundsLoc+ "F2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer13;
-    if (!buffer13.loadFromFile(soundsLoc+ "C3.ogg"))
+    if (!allBuffers[12].loadFromFile(soundsLoc+ "C3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer14;
-    if (!buffer14.loadFromFile(soundsLoc+ "G3.ogg"))
+    if (!allBuffers[13].loadFromFile(soundsLoc+ "G3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer15;
-    if (!buffer15.loadFromFile(soundsLoc+ "D3.ogg"))
+    if (!allBuffers[14].loadFromFile(soundsLoc+ "D3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer16;
-    if (!buffer16.loadFromFile(soundsLoc+ "A2.ogg"))
+    if (!allBuffers[15].loadFromFile(soundsLoc+ "A2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer17;
-    if (!buffer17.loadFromFile(soundsLoc+ "E3.ogg"))
+    if (!allBuffers[16].loadFromFile(soundsLoc+ "E3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer18;
-    if (!buffer18.loadFromFile(soundsLoc+ "B2.ogg"))
+    if (!allBuffers[17].loadFromFile(soundsLoc+ "B2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer19;
-    if (!buffer19.loadFromFile(soundsLoc+ "F#3.ogg"))
+    if (!allBuffers[18].loadFromFile(soundsLoc+ "F#3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer20;
-    if (!buffer20.loadFromFile(soundsLoc+ "C#3.ogg"))
+    if (!allBuffers[19].loadFromFile(soundsLoc+ "C#3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer21;
-    if (!buffer21.loadFromFile(soundsLoc+ "G#3.ogg"))
+    if (!allBuffers[20].loadFromFile(soundsLoc+ "G#3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer22;
-    if (!buffer22.loadFromFile(soundsLoc+ "Eb3.ogg"))
+    if (!allBuffers[21].loadFromFile(soundsLoc+ "Eb3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer23;
-    if (!buffer23.loadFromFile(soundsLoc+ "Bb2.ogg"))
+    if (!allBuffers[22].loadFromFile(soundsLoc+ "Bb2.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer24;
-    if (!buffer24.loadFromFile(soundsLoc+ "F3.ogg"))
+    if (!allBuffers[23].loadFromFile(soundsLoc+ "F3.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer25;
-    if (!buffer25.loadFromFile(soundsLoc+ "C4.ogg"))
+    if (!allBuffers[24].loadFromFile(soundsLoc+ "C4.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer26;
-    if (!buffer26.loadFromFile(soundsLoc+ "D4.ogg"))
+    if (!allBuffers[25].loadFromFile(soundsLoc+ "D4.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer27;
-    if (!buffer27.loadFromFile(soundsLoc+ "E4.ogg"))
+    if (!allBuffers[26].loadFromFile(soundsLoc+ "E4.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer28;
-    if (!buffer28.loadFromFile(soundsLoc+ "Eb4.ogg"))
+    if (!allBuffers[27].loadFromFile(soundsLoc+ "Eb4.ogg"))
         exit(-1);
-    sf::SoundBuffer buffer29;
-    if (!buffer29.loadFromFile(soundsLoc+ "C#4.ogg"))
+    if (!allBuffers[28].loadFromFile(soundsLoc+ "C#4.ogg"))
         exit(-1);
     
-    sf::Sound c1;
-    allSounds[0].setBuffer(buffer1);
-    
-    sf::Sound g2;
-    allSounds[1].setBuffer(buffer2);
-    
-    sf::Sound d2;
-    allSounds[2].setBuffer(buffer3);
-    
-    sf::Sound a1;
-    allSounds[3].setBuffer(buffer4);
-    
-    sf::Sound e2;
-    allSounds[4].setBuffer(buffer5);
-    
-    sf::Sound b1;
-    allSounds[5].setBuffer(buffer6);
-    
-    sf::Sound fs2;
-    allSounds[6].setBuffer(buffer7);
-    
-    sf::Sound cs2;
-    allSounds[7].setBuffer(buffer8);
-    
-    sf::Sound gs2;
-    allSounds[8].setBuffer(buffer9);
-    
-    sf::Sound eb2;
-    allSounds[9].setBuffer(buffer10);
-    
-    sf::Sound bb1;
-    allSounds[10].setBuffer(buffer11);
-    
-    sf::Sound f2;
-    allSounds[11].setBuffer(buffer12);
-    
-    sf::Sound c3;
-    allSounds[12].setBuffer(buffer13);
-    
-    allSounds[13].setBuffer(buffer14);
-    
-    sf::Sound d3;
-    allSounds[14].setBuffer(buffer15);
-    
-    sf::Sound a2;
-    allSounds[15].setBuffer(buffer16);
-    
-    sf::Sound e3;
-    allSounds[16].setBuffer(buffer17);
-    
-    sf::Sound b2;
-    allSounds[17].setBuffer(buffer18);
-    
-    sf::Sound fs3;
-    allSounds[18].setBuffer(buffer19);
-    
-    sf::Sound cs3;
-    allSounds[19].setBuffer(buffer20);
-    
-    sf::Sound gs3;
-    allSounds[20].setBuffer(buffer21);
-    
-    sf::Sound eb3;
-    allSounds[21].setBuffer(buffer22);
-    
-    sf::Sound bb2;
-    allSounds[22].setBuffer(buffer23);
-    
-    sf::Sound f3;
-    allSounds[23].setBuffer(buffer24);
-    
-    sf::Sound c4;
-    allSounds[24].setBuffer(buffer25);
-    
-    sf::Sound cs4;
-    allSounds[25].setBuffer(buffer26);
-    
-    sf::Sound d4;
-    allSounds[26].setBuffer(buffer27);
-    
-    sf::Sound eb4;
-    allSounds[27].setBuffer(buffer28);
-    
-    sf::Sound e4;
-    allSounds[28].setBuffer(buffer29);
-    
+    allSounds[0].setBuffer(allBuffers[0]);
+    allSounds[1].setBuffer(allBuffers[1]);
+    allSounds[2].setBuffer(allBuffers[2]);
+    allSounds[3].setBuffer(allBuffers[3]);
+    allSounds[4].setBuffer(allBuffers[4]);
+    allSounds[5].setBuffer(allBuffers[5]);
+    allSounds[6].setBuffer(allBuffers[6]);
+    allSounds[7].setBuffer(allBuffers[7]);
+    allSounds[8].setBuffer(allBuffers[8]);
+    allSounds[9].setBuffer(allBuffers[9]);
+    allSounds[10].setBuffer(allBuffers[10]);
+    allSounds[11].setBuffer(allBuffers[11]);
+    allSounds[12].setBuffer(allBuffers[12]);
+    allSounds[13].setBuffer(allBuffers[13]);
+    allSounds[14].setBuffer(allBuffers[14]);
+    allSounds[15].setBuffer(allBuffers[15]);
+    allSounds[16].setBuffer(allBuffers[16]);
+    allSounds[17].setBuffer(allBuffers[17]);
+    allSounds[18].setBuffer(allBuffers[18]);
+    allSounds[19].setBuffer(allBuffers[19]);
+    allSounds[20].setBuffer(allBuffers[20]);
+    allSounds[21].setBuffer(allBuffers[21]);
+    allSounds[22].setBuffer(allBuffers[22]);
+    allSounds[23].setBuffer(allBuffers[23]);
+    allSounds[24].setBuffer(allBuffers[24]);
+    allSounds[25].setBuffer(allBuffers[25]);
+    allSounds[26].setBuffer(allBuffers[26]);
+    allSounds[27].setBuffer(allBuffers[27]);
+    allSounds[28].setBuffer(allBuffers[28]);
 }
 
 int main(int, char const**){
@@ -200,6 +114,7 @@ int main(int, char const**){
     //set resource locations
     string soundsLoc = "./resources/sounds/";
     string imagesLoc = "./resources/images/";
+
     
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 800), "Steel Drum Game");
@@ -217,10 +132,11 @@ int main(int, char const**){
     if (!font.loadFromFile(imagesLoc + "sansation.ttf")) {
         return EXIT_FAILURE;
     }
+   
     
     sf::Sound currentSounds[29];
-    
-    setTenorSounds(currentSounds);
+    sf::SoundBuffer currentBuffers[29];
+    setTenorSounds(currentSounds, currentBuffers);
     
     sf::Text text("Learn the Steel Drums!", font, 50);
     text.setColor(sf::Color::Red);
@@ -233,6 +149,7 @@ int main(int, char const**){
         sf::Event event;
         while (window.pollEvent(event))
         {
+
             switch (event.type) {
                     
                     // Close window : exit
@@ -348,7 +265,6 @@ int main(int, char const**){
                         }
                     }
                     
-                    
                     break;
                     
                 default:
@@ -371,5 +287,3 @@ int main(int, char const**){
     
     return EXIT_SUCCESS;
 }
-
-

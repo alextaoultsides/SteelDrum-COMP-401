@@ -20,7 +20,7 @@ using namespace std;
 
 
 void setTenorSounds(sf::Sound(allSounds)[29], sf::SoundBuffer(allBuffers)[29]) {
-	string soundsLoc = ./resources/sounds/;
+	string soundsLoc = resourcePath();
     
     
     
@@ -149,8 +149,8 @@ bool checkMeasure(int barCounter, string &userAttempt,  string& currentBar, int 
 int main(int, char const**){
     
 	//set resource locations
-	string soundsLoc = ./resources/sound;
-	string imagesLoc = ./resources/images;
+	string soundsLoc = resourcePath();
+	string imagesLoc = resourcePath();
     
     
 	// Create the main window

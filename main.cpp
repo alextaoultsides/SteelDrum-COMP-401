@@ -20,344 +20,216 @@ using namespace std;
 
 
 void setTenorSounds(sf::Sound(allSounds)[29], sf::SoundBuffer(allBuffers)[29]) {
-	string soundsLoc = ./resources/sounds/;
+  string soundsLoc = resourcePath();
     
     
     
-	//Sounds
-	if (!allBuffers[0].loadFromFile(soundsLoc + "C1.ogg"))
-		exit(-1);
-	if (!allBuffers[1].loadFromFile(soundsLoc + "G2.ogg"))
-		exit(-1);
-	if (!allBuffers[2].loadFromFile(soundsLoc + "D2.ogg"))
-		exit(-1);
-	if (!allBuffers[3].loadFromFile(soundsLoc + "A1.ogg"))
-		exit(-1);
-	if (!allBuffers[4].loadFromFile(soundsLoc + "E2.ogg"))
-		exit(-1);
-	if (!allBuffers[5].loadFromFile(soundsLoc + "B1.ogg"))
-		exit(-1);
-	if (!allBuffers[6].loadFromFile(soundsLoc + "F#2.ogg"))
-		exit(-1);
-	if (!allBuffers[7].loadFromFile(soundsLoc + "C#2.ogg"))
-		exit(-1);
-	if (!allBuffers[8].loadFromFile(soundsLoc + "G#2.ogg"))
-		exit(-1);
-	if (!allBuffers[9].loadFromFile(soundsLoc + "Eb2.ogg"))
-		exit(-1);
-	if (!allBuffers[10].loadFromFile(soundsLoc + "Bb1.ogg"))
-		exit(-1);
-	if (!allBuffers[11].loadFromFile(soundsLoc + "F2.ogg"))
-		exit(-1);
-	if (!allBuffers[12].loadFromFile(soundsLoc + "C3.ogg"))
-		exit(-1);
-	if (!allBuffers[13].loadFromFile(soundsLoc + "G3.ogg"))
-		exit(-1);
-	if (!allBuffers[14].loadFromFile(soundsLoc + "D3.ogg"))
-		exit(-1);
-	if (!allBuffers[15].loadFromFile(soundsLoc + "A2.ogg"))
-		exit(-1);
-	if (!allBuffers[16].loadFromFile(soundsLoc + "E3.ogg"))
-		exit(-1);
-	if (!allBuffers[17].loadFromFile(soundsLoc + "B2.ogg"))
-		exit(-1);
-	if (!allBuffers[18].loadFromFile(soundsLoc + "F#3.ogg"))
-		exit(-1);
-	if (!allBuffers[19].loadFromFile(soundsLoc + "C#3.ogg"))
-		exit(-1);
-	if (!allBuffers[20].loadFromFile(soundsLoc + "G#3.ogg"))
-		exit(-1);
-	if (!allBuffers[21].loadFromFile(soundsLoc + "Eb3.ogg"))
-		exit(-1);
-	if (!allBuffers[22].loadFromFile(soundsLoc + "Bb2.ogg"))
-		exit(-1);
-	if (!allBuffers[23].loadFromFile(soundsLoc + "F3.ogg"))
-		exit(-1);
-	if (!allBuffers[24].loadFromFile(soundsLoc + "C4.ogg"))
-		exit(-1);
-	if (!allBuffers[25].loadFromFile(soundsLoc + "D4.ogg"))
-		exit(-1);
-	if (!allBuffers[26].loadFromFile(soundsLoc + "E4.ogg"))
-		exit(-1);
-	if (!allBuffers[27].loadFromFile(soundsLoc + "Eb4.ogg"))
-		exit(-1);
-	if (!allBuffers[28].loadFromFile(soundsLoc + "C#4.ogg"))
-		exit(-1);
+  //Sounds
+  if (!allBuffers[0].loadFromFile(soundsLoc + "C1.ogg"))
+    exit(-1);
+  if (!allBuffers[1].loadFromFile(soundsLoc + "G2.ogg"))
+    exit(-1);
+  if (!allBuffers[2].loadFromFile(soundsLoc + "D2.ogg"))
+    exit(-1);
+  if (!allBuffers[3].loadFromFile(soundsLoc + "A1.ogg"))
+    exit(-1);
+  if (!allBuffers[4].loadFromFile(soundsLoc + "E2.ogg"))
+    exit(-1);
+  if (!allBuffers[5].loadFromFile(soundsLoc + "B1.ogg"))
+    exit(-1);
+  if (!allBuffers[6].loadFromFile(soundsLoc + "F#2.ogg"))
+    exit(-1);
+  if (!allBuffers[7].loadFromFile(soundsLoc + "C#2.ogg"))
+    exit(-1);
+  if (!allBuffers[8].loadFromFile(soundsLoc + "G#2.ogg"))
+    exit(-1);
+  if (!allBuffers[9].loadFromFile(soundsLoc + "Eb2.ogg"))
+    exit(-1);
+  if (!allBuffers[10].loadFromFile(soundsLoc + "Bb1.ogg"))
+    exit(-1);
+  if (!allBuffers[11].loadFromFile(soundsLoc + "F2.ogg"))
+    exit(-1);
+  if (!allBuffers[12].loadFromFile(soundsLoc + "C3.ogg"))
+    exit(-1);
+  if (!allBuffers[13].loadFromFile(soundsLoc + "G3.ogg"))
+    exit(-1);
+  if (!allBuffers[14].loadFromFile(soundsLoc + "D3.ogg"))
+    exit(-1);
+  if (!allBuffers[15].loadFromFile(soundsLoc + "A2.ogg"))
+    exit(-1);
+  if (!allBuffers[16].loadFromFile(soundsLoc + "E3.ogg"))
+    exit(-1);
+  if (!allBuffers[17].loadFromFile(soundsLoc + "B2.ogg"))
+    exit(-1);
+  if (!allBuffers[18].loadFromFile(soundsLoc + "F#3.ogg"))
+    exit(-1);
+  if (!allBuffers[19].loadFromFile(soundsLoc + "C#3.ogg"))
+    exit(-1);
+  if (!allBuffers[20].loadFromFile(soundsLoc + "G#3.ogg"))
+    exit(-1);
+  if (!allBuffers[21].loadFromFile(soundsLoc + "Eb3.ogg"))
+    exit(-1);
+  if (!allBuffers[22].loadFromFile(soundsLoc + "Bb2.ogg"))
+    exit(-1);
+  if (!allBuffers[23].loadFromFile(soundsLoc + "F3.ogg"))
+    exit(-1);
+  if (!allBuffers[24].loadFromFile(soundsLoc + "C4.ogg"))
+    exit(-1);
+  if (!allBuffers[25].loadFromFile(soundsLoc + "D4.ogg"))
+    exit(-1);
+  if (!allBuffers[26].loadFromFile(soundsLoc + "E4.ogg"))
+    exit(-1);
+  if (!allBuffers[27].loadFromFile(soundsLoc + "Eb4.ogg"))
+    exit(-1);
+  if (!allBuffers[28].loadFromFile(soundsLoc + "C#4.ogg"))
+    exit(-1);
     
-	allSounds[0].setBuffer(allBuffers[0]);
-	allSounds[1].setBuffer(allBuffers[1]);
-	allSounds[2].setBuffer(allBuffers[2]);
-	allSounds[3].setBuffer(allBuffers[3]);
-	allSounds[4].setBuffer(allBuffers[4]);
-	allSounds[5].setBuffer(allBuffers[5]);
-	allSounds[6].setBuffer(allBuffers[6]);
-	allSounds[7].setBuffer(allBuffers[7]);
-	allSounds[8].setBuffer(allBuffers[8]);
-	allSounds[9].setBuffer(allBuffers[9]);
-	allSounds[10].setBuffer(allBuffers[10]);
-	allSounds[11].setBuffer(allBuffers[11]);
-	allSounds[12].setBuffer(allBuffers[12]);
-	allSounds[13].setBuffer(allBuffers[13]);
-	allSounds[14].setBuffer(allBuffers[14]);
-	allSounds[15].setBuffer(allBuffers[15]);
-	allSounds[16].setBuffer(allBuffers[16]);
-	allSounds[17].setBuffer(allBuffers[17]);
-	allSounds[18].setBuffer(allBuffers[18]);
-	allSounds[19].setBuffer(allBuffers[19]);
-	allSounds[20].setBuffer(allBuffers[20]);
-	allSounds[21].setBuffer(allBuffers[21]);
-	allSounds[22].setBuffer(allBuffers[22]);
-	allSounds[23].setBuffer(allBuffers[23]);
-	allSounds[24].setBuffer(allBuffers[24]);
-	allSounds[25].setBuffer(allBuffers[25]);
-	allSounds[26].setBuffer(allBuffers[26]);
-	allSounds[27].setBuffer(allBuffers[27]);
-	allSounds[28].setBuffer(allBuffers[28]);
+  allSounds[0].setBuffer(allBuffers[0]);
+  allSounds[1].setBuffer(allBuffers[1]);
+  allSounds[2].setBuffer(allBuffers[2]);
+  allSounds[3].setBuffer(allBuffers[3]);
+  allSounds[4].setBuffer(allBuffers[4]);
+  allSounds[5].setBuffer(allBuffers[5]);
+  allSounds[6].setBuffer(allBuffers[6]);
+  allSounds[7].setBuffer(allBuffers[7]);
+  allSounds[8].setBuffer(allBuffers[8]);
+  allSounds[9].setBuffer(allBuffers[9]);
+  allSounds[10].setBuffer(allBuffers[10]);
+  allSounds[11].setBuffer(allBuffers[11]);
+  allSounds[12].setBuffer(allBuffers[12]);
+  allSounds[13].setBuffer(allBuffers[13]);
+  allSounds[14].setBuffer(allBuffers[14]);
+  allSounds[15].setBuffer(allBuffers[15]);
+  allSounds[16].setBuffer(allBuffers[16]);
+  allSounds[17].setBuffer(allBuffers[17]);
+  allSounds[18].setBuffer(allBuffers[18]);
+  allSounds[19].setBuffer(allBuffers[19]);
+  allSounds[20].setBuffer(allBuffers[20]);
+  allSounds[21].setBuffer(allBuffers[21]);
+  allSounds[22].setBuffer(allBuffers[22]);
+  allSounds[23].setBuffer(allBuffers[23]);
+  allSounds[24].setBuffer(allBuffers[24]);
+  allSounds[25].setBuffer(allBuffers[25]);
+  allSounds[26].setBuffer(allBuffers[26]);
+  allSounds[27].setBuffer(allBuffers[27]);
+  allSounds[28].setBuffer(allBuffers[28]);
 }
 
-int getTenorBars(string (tenorBars)[4]){
-    tenorBars[0] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
-    tenorBars[1] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
-    tenorBars[2] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
-    tenorBars[3] = "F3-BB2-BB2-BB2-BB2-C3-C3-BB2-";
-    return 4;
+int getTenorBars(string (tenorBars)[14]){
+  tenorBars[0] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
+  tenorBars[1] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
+  tenorBars[2] = "F3-BB2-BB2-BB2-BB2-C3-C3-";
+  tenorBars[3] = "F3-BB2-BB2-BB2-BB2-C3-C3-BB2-";
+  tenorBars[4] = "D3-D3-D3-D3-EB3";
+  tenorBars[5] = "BB2-G3-D3-D3-EB3";
+  tenorBars[6] = "BB2-G3-D3-EB3-D3-";
+  tenorBars[7] = "C3-C3-C3-D3-C3-";
+  tenorBars[8] = "BB2-D3-D3-D3-D3-EB3";
+  tenorBars[9] = "BB2-G3-D3-D3-EB3-";
+  tenorBars[10] = "BB2-G3-D3-EB3-D3-";
+  tenorBars[11] = "C3-C3-C3-D3-C3-BB2-";
+  tenorBars[12] = "F3-BB2-BB2-BB2-BB2-BB2-BB2";
+  tenorBars[13] = "F3-BB2-BB2-BB2-Bb2-C3-C3-BB2-";
+    
+  return 14;
 }
 
-bool checkMeasure(int barCounter, string &userAttempt,  string& currentBar, int numberOfBars, string (correctBars)[4], sf::Clock clock, sf::Time checkTime){
-    bool correct = false;
-    if(userAttempt == currentBar){
-        cout << "CORRECT" << endl;
-        correct = true;
-        cout << userAttempt << "==" << currentBar << endl;
-        barCounter++;
-        //check if complete
-        if (barCounter == numberOfBars){
-            cout <<"CONGRATS! You completed this section!" << endl;
-        }else{
-            currentBar = correctBars[barCounter];
-            userAttempt = "";
+bool checkMeasure(int barCounter, string &userAttempt,  string& currentBar, int numberOfBars, string (correctBars)[14], sf::Clock clock, sf::Time checkTime){
+  bool correct = false;
+  if(userAttempt == currentBar){
+    cout << "CORRECT" << endl;
+    correct = true;
+    cout << userAttempt << "==" << currentBar << endl;
+    barCounter++;
+    //check if complete
+    if (barCounter == numberOfBars){
+      cout <<"CONGRATS! You completed this section!" << endl;
+    }else{
+      currentBar = correctBars[barCounter];
+      userAttempt = "";
             
-        }
-    }else {
-        cout << "Incorrect! Try Again!" << endl;
-        cout << userAttempt << "!=" << currentBar << endl;
-        userAttempt = "";
     }
-     return correct;
+  }else {
+    cout << "Incorrect! Try Again!" << endl;
+    cout << userAttempt << "!=" << currentBar << endl;
+    userAttempt = "";
+  }
+  return correct;
 }
 
 int main(int, char const**){
     
-	//set resource locations
-	string soundsLoc = ./resources/sound;
-	string imagesLoc = ./resources/images;
+  //set resource locations
+  string soundsLoc = resourcePath();
+  string imagesLoc = resourcePath();
     
     
-	// Create the main window
-	sf::RenderWindow window(sf::VideoMode(800, 800), "Steel Drum Game");
-	window.setPosition(sf::Vector2i(0, 0));
+  // Create the main window
+  sf::RenderWindow window(sf::VideoMode(800, 800), "Steel Drum Game");
+  window.setPosition(sf::Vector2i(0, 0));
     
-	// Load a sprite to display
-	sf::Texture texture;
-	if (!texture.loadFromFile(imagesLoc + "lead_diagram.jpg")) {
-		return EXIT_FAILURE;
-	}
-	sf::Sprite sprite(texture);
+  // Load a sprite to display
+  sf::Texture texture;
+  if (!texture.loadFromFile(imagesLoc + "lead_diagram.jpg")) {
+    return EXIT_FAILURE;
+  }
+  sf::Sprite sprite(texture);
     
-	// Create a graphical text to display
-	sf::Font font;
-	if (!font.loadFromFile(imagesLoc + "sansation.ttf")) {
-		return EXIT_FAILURE;
-	}
+  // Create a graphical text to display
+  sf::Font font;
+  if (!font.loadFromFile(imagesLoc + "sansation.ttf")) {
+    retur
+      checkTime = clock.getElapsedTime();
+  }
+  music.pause();
     
-    
-	sf::Sound currentSounds[29];
-	sf::SoundBuffer currentBuffers[29];
-	setTenorSounds(currentSounds, currentBuffers);
-    
-	sf::Text text("Learn the Steel Drums!", font, 50);
-	text.setColor(sf::Color::Red);
-
-	sf::Music music;
-	if (!music.openFromFile(soundsLoc + "Mr_Fete Tenor.ogg"))
-		return -1;
-    music.play();
-    sf::Clock clock;
-    // 120 bpm
-    sf::Time checkTime = clock.getElapsedTime();
-    while(!music.getStatus()){
-        
-    }
-    while (checkTime.asSeconds() < 4){
-        checkTime = clock.getElapsedTime();
-    }
-    music.pause();
-    
-    string correctBars[4];
-    int numberOfBars;
-    numberOfBars = getTenorBars(correctBars);
-    int barCounter = 0;
-    string currentBar = correctBars[barCounter];
-    string userAttempt = "";
-    bool correct;
-
-    //1F 4Bf 2C
-    // Z or X | DCDC or CDCD or DDDD or CCCC or DDCC or CCDD or CDDC or DCCD | VB or BV or VV or BB
-    
-    
-	int shiftCounter = 0; // variable to determine octave
-	// Start the game loop
-	while (window.isOpen())
-	{
-        if (userAttempt.size() == currentBar.size()){
-            cout << "PLAY MUSIC" << endl;
-            clock.restart();
-            checkTime = clock.getElapsedTime();
-            while(checkTime.asSeconds() < 2){
-                checkTime =clock.getElapsedTime();
-            }
-            music.play();
-            while(!music.getStatus()){
-                cout << "waiting to play";
-            }
-            correct = true;
-            clock.restart();
-            checkTime = clock.getElapsedTime();
+  string correctBars[14];
+  int numberOfBars;
+  numberOfBars = getTenorBars(correctBars);
+  int barCounter = 0;
+  string currentBar = correctBars[barCounter];
+    string userAttempt = lapsedTime();
             while (checkTime.asSeconds() < 1.9){
                 checkTime = clock.getElapsedTime();
             }
             music.pause();
             userAttempt = "";
         }
-		// Process events
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
+// Process events
+sf::Event event;
+while (window.pollEvent(event))
+{
             
-			switch (event.type) {
-                    
-                    // Close window : exit
-                case sf::Event::Closed:
-                    window.close();
-                    break;
-                    
-                case sf::Event::KeyPressed:
-                    
-                    //Octave Shift
-                    if (event.key.code == sf::Keyboard::LShift || event.key.code == sf::Keyboard::RShift){
-                        shiftCounter = (shiftCounter + 1) % 3; //calc shiftCounter using modulo
-                        cout << "shiftCounter changed!" << endl;
-                        cout << "shiftCounter = " << shiftCounter << endl;
-                    }
-                    
-                    // check bar
-                    if (shiftCounter == 0){
+                if (shiftCounter == 0){
                         if (event.key.code == sf::Keyboard::V || event.key.code == sf::Keyboard::B){
                             currentSounds[12].play();  // c3
                             userAttempt += "C3-";
-                        }
-                        if (event.key.code == sf::Keyboard::N || event.key.code == sf::Keyboard::M){
-                            currentSounds[13].play();  // g3
-                            userAttempt += "G3-";
-                        }
-                        if (event.key.code == sf::Keyboard::Comma || event.key.code == sf::Keyboard::Period){
-                            currentSounds[14].play();  // d3
-                            userAttempt += "D3-";
-                        }
-                        if (event.key.code == sf::Keyboard::L || event.key.code == sf::Keyboard::SemiColon){
-                            currentSounds[15].play();  // a2
-                            userAttempt += "A2-";
-                        }
-                        if (event.key.code == sf::Keyboard::O || event.key.code == sf::Keyboard::P){
+                            if (event.key.code == sf::Keyboard::O || event.key.code == sf::Keyboard::P){
                             currentSounds[16].play();  // e3
                             userAttempt += "E3-";
                         }
                         if (event.key.code == sf::Keyboard::U || event.key.code == sf::Keyboard::I){
-                            currentSounds[17].play();  // b2
-                            userAttempt += "B2-";
-                        }
-                        if (event.key.code == sf::Keyboard::T || event.key.code == sf::Keyboard::Y){
-                            currentSounds[18].play();   // fs3
-                            userAttempt += "FS3-";
-                        }
-                        if (event.key.code == sf::Keyboard::E || event.key.code == sf::Keyboard::R){
-                            currentSounds[19].play();   //cs3
-                            userAttempt += "CS3-";
-                        }
-                        if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::W){
+        e == sf::Keyboard::W){
                             currentSounds[20].play();   //gs3
                             userAttempt += "GS3-";
                         }
                         if (event.key.code == sf::Keyboard::A || event.key.code == sf::Keyboard::S){
-                            currentSounds[21].play();   //eb3
-                            userAttempt += "EB3-";
-                        }
-                        if (event.key.code == sf::Keyboard::D || event.key.code == sf::Keyboard::C){
-                            currentSounds[22].play();   //bb2
-                            userAttempt += "BB2-";
-                        }
-                        if (event.key.code == sf::Keyboard::Z || event.key.code == sf::Keyboard::X){
-                            currentSounds[23].play();  // f3
-                            userAttempt += "F3-";
-                        }
-                        
-                    }
-                    
-                    else if (shiftCounter == 1){
-                        if (event.key.code == sf::Keyboard::V || event.key.code == sf::Keyboard::B){
+                          f (event.key.code == sf::Keyboard::V || event.key.code == sf::Keyboard::B){
                             currentSounds[24].play();  // c4
                             userAttempt += "C4-";
                         }
-                        if (event.key.code == sf::Keyboard::Comma || event.key.code == sf::Keyboard::Period){
-                            currentSounds[26].play();  // d4
-                            userAttempt += "D4-";
-                        }
-                        if (event.key.code == sf::Keyboard::O || event.key.code == sf::Keyboard::P){
-                            currentSounds[28].play();  // e4
-                            userAttempt += "E4-";
-                        }
-                        if (event.key.code == sf::Keyboard::E || event.key.code == sf::Keyboard::R){
-                            currentSounds[25].play(); // cs4
-                            userAttempt += "CS4-";
-                        }
-                        if (event.key.code == sf::Keyboard::A || event.key.code == sf::Keyboard::S){
+                        if (event.key.code == sf::Keyboard::Co::Keyboard::S){
                             currentSounds[27].play(); // eb4
                             userAttempt += "EB4-";
                         }
                         
-                    }
-                    
-                    else{
-                        if (event.key.code == sf::Keyboard::V || event.key.code == sf::Keyboard::B){
-                            currentSounds[0].play();  // c1
-                            userAttempt += "C1-";
-                        }
-                        if (event.key.code == sf::Keyboard::N || event.key.code == sf::Keyboard::M){
-                            currentSounds[1].play();  // g2
-                            userAttempt += "G2-";
-                        }
-                        if (event.key.code == sf::Keyboard::Comma || event.key.code == sf::Keyboard::Period){
-                            currentSounds[2].play();  // d2
-                            userAttempt += "D2-";
-                        }
-                        if (event.key.code == sf::Keyboard::L || event.key.code == sf::Keyboard::SemiColon){
+         oard::L || event.key.code == sf::Keyboard::SemiColon){
                             currentSounds[3].play();  // a1
                             userAttempt += "A1-";
                         }
                         if (event.key.code == sf::Keyboard::O || event.key.code == sf::Keyboard::P){
                             currentSounds[4].play();  // e2
-                            userAttempt += "E2-";
-                        }
-                        if (event.key.code == sf::Keyboard::U || event.key.code == sf::Keyboard::I){
-                            currentSounds[5].play();  // b1
-                            userAttempt += "B1-";
-                        }
-                        if (event.key.code == sf::Keyboard::T || event.key.code == sf::Keyboard::Y){
-                            currentSounds[6].play(); // fs2
-                            userAttempt += "FS2-";
-                        }
-                        if (event.key.code == sf::Keyboard::E || event.key.code == sf::Keyboard::R){
-                            currentSounds[7].play(); // cs2
+                currentSounds[7].play(); // cs2
                             userAttempt += "CS-";
                         }
                         if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::W){
@@ -367,14 +239,7 @@ int main(int, char const**){
                         if (event.key.code == sf::Keyboard::A || event.key.code == sf::Keyboard::S){
                             currentSounds[9].play();  // eb2
                             userAttempt += "EB2-";
-                        }
-                        if (event.key.code == sf::Keyboard::D || event.key.code == sf::Keyboard::C){
-                            currentSounds[10].play(); // bb1
-                            userAttempt += "BB1-";
-                        }
-                        if (event.key.code == sf::Keyboard::Z || event.key.code == sf::Keyboard::X){
-                            currentSounds[11].play();  // f2
-                            userAttempt += "F2-";
+    userAttempt += "F2-";
                         }
                     }
                     
@@ -382,21 +247,10 @@ int main(int, char const**){
                     
                 default:
                     break;
-			}
-		}
-        
-		// Clear screen
-		window.clear();
-        
-		// Draw the sprite
-		window.draw(sprite);
-        
-		// Draw the string
-		window.draw(text);
-        
-		// Update the window
-		window.display();
-	}
-    
-	return EXIT_SUCCESS;
 }
+}
+        
+// Clear screen
+window.clear();
+        
+// Draw
